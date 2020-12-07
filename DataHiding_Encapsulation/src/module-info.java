@@ -1,0 +1,2 @@
+module dataHiding_Encapsulation {
+}
