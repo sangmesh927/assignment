@@ -1,7 +1,7 @@
 package com.example.demo;
 
 public class MobileBill {
-	public static  int billNo  =0;
+	public static  int billCount  =0;
 	private String name;
 	private String mobileNumber;
 	private String planName;
@@ -14,7 +14,7 @@ public class MobileBill {
 	}
 	public MobileBill(String name, String mobileNumber) {
 		this(name,mobileNumber,"basic",199);
-		MobileBill.billNo=MobileBill.billNo+1;
+		MobileBill.billCount=MobileBill.billCount+1;
 		//this.name = name;
 		//this.mobileNumber = mobileNumber;
 	}
