@@ -1,0 +1,9 @@
+contacts by group in ascending order of group size
+personal friends-1
+[name=suresh, mobileNumber=1234567899, address=#123,udupi, profilePitcure=www.sureh.com, DateOfBirth=1999-11-23, email=suresh@gmail.com]
+null-1
+[]
+relatives-2
+[name=ramesh, mobileNumber=268375, address=101,bangalore, profilePitcure=www.ram.com, DateOfBirth=1997-02-22, email=ram@gmail.com, name=sangmesh, mobileNumber=9008657107, address=#243,bhalki, profilePitcure=www.image.com, DateOfBirth=1997-02-22, email=sapatil917@gmail.com]
+professional friends-2
+[name=rakesh, mobileNumber=1234567890, address=#123,bidar, profilePitcure=www.rakesh.com, DateOfBirth=1999-02-23, email=rakesh@g.com, name=ramesh, mobileNumber=9876543210, address=#987,mysore, profilePitcure=www.ramesh.com, DateOfBirth=1999-11-02, email=ramesh@g.com]
