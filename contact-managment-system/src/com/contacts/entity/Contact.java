@@ -71,8 +71,8 @@ public class Contact {
 	}
 	@Override
 	public String toString() {
-		return "Contact [name=" + name + ", mobileNumber=" + mobileNumber + ", address=" + address + ", profilePitcure="
-				+ profilePitcure + ", DateOfBirth=" + DateOfBirth + ", email=" + email + ", group=" + group + "]";
+		return "name=" + name + ", mobileNumber=" + mobileNumber + ", address=" + address + ", profilePitcure="
+				+ profilePitcure + ", DateOfBirth=" + DateOfBirth + ", email=" + email;
 	}
 	@Override
 	public int hashCode() {

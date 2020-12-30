@@ -1,29 +1,30 @@
 package com.contacts.services;
-
-
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Iterator;
 import java.util.List;
+import java.io.*;
 
 import com.contacts.entity.Contact;
-import com.contacts.ifaces.DataAccess;
-import com.contacts.utils.DbConnectionUtils;
 
 public class ContactService{
-	private Connection con;
-	public ContactService(Connection con) {
-		
-		this.con = con;
+	public boolean writeToTextFile(List<Contact> list,File fileName) {
+		 
+		 
+	    try {  
+	    	
+	    	FileWriter myWriter = new FileWriter(fileName);
+            Iterator<Contact> iterator = list.iterator();
+			while(iterator.hasNext()){
+							myWriter.write(iterator.next()+"\n");
+			}
+	        myWriter.close();
+	      System.out.println("Successfully wrote to the file.");
 	}
-	public ContactService() {
-		super();
-		this.con = DbConnectionUtils.getMySqlConnection();
-	}
-	public int remove() {
-		return 0;
-		
-	}
-	
+	      catch (IOException e) {
+			e.printStackTrace();
+		}
+	      return true;
+      }
 }
